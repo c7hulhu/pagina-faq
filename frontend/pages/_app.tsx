@@ -11,10 +11,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav className="bg-gray-200">
-        <div className="max-w-6xl mx-auto border ">
-          <div className="flex justify-between text-white">
-            <div className="flex py-2 space-x-4">
-              <div className="px-5 py-2 bg-yellow-500 rounded-full">
+        <div className="max-w-6xl px-4 mx-auto border">
+          <div className="flex justify-end text-black md:justify-between">
+            {/* bottões direita */}
+            <div className="hidden py-2 space-x-4 md:flex">
+              <div className="px-5 py-2 transition duration-300 bg-yellow-500 rounded-full hover:bg-yellow-400">
                 <a href="#" className="flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                   <span>Seja um franqueado</span>
                 </a>
               </div>
-              <div className="px-5 py-2 bg-indigo-900 rounded-full">
+              <div className="px-5 py-2 transition duration-300 bg-indigo-900 rounded-full hover:bg-indigo-800">
                 <a href="#" className="flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -52,14 +53,15 @@ function MyApp({ Component, pageProps }: AppProps) {
                   <span>Seja um consultor</span>
                 </a>
               </div>
-              <div className="px-5 py-2 bg-blue-400 rounded-full">
+              <div className="px-5 py-2 transition duration-300 bg-blue-400 rounded-full hover:bg-blue-300">
                 <a href="#" className="flex items-center">
                   <span>Quero comprar</span>
                 </a>
               </div>
             </div>
-            <div className="">
-              <div className="py-2 bg-yellow-500">
+            {/* bottões esquerdo */}
+            <div className="hidden md:block">
+              <div className="px-5 py-2 transition duration-300 bg-yellow-500 rounded hover:bg-yellow-400">
                 <a href="" className="flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +81,41 @@ function MyApp({ Component, pageProps }: AppProps) {
                 </a>
               </div>
             </div>
+            {/* bottões mobile */}
+            <div className="flex md:hidden">
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="w-6 h-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
+        </div>
+        {/* menu mobile */}
+        <div>
+          <a href="" className="block px-4 py-2 text-sm hover:bg-gray-300">
+            Seja um franqueado
+          </a>
+          <a href="" className="block px-4 py-2 text-sm hover:bg-gray-300">
+            Seja um consultor
+          </a>
+          <a href="" className="block px-4 py-2 text-sm hover:bg-gray-300">
+            Quero comprar
+          </a>
+          <a href="" className="block px-4 py-2 text-sm hover:bg-gray-300">
+            Área restrita
+          </a>
         </div>
       </nav>
 
