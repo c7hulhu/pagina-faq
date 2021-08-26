@@ -5,7 +5,6 @@
 ## Página de F.A.Q teste e estudo.
 
 - ⚡ **Next.js** — The React Framework
-- 🔥 **next-seo** — Manage SEO easily
 - 💡 **Twind** — The smallest, fastest, most feature complete Tailwind-in-JS solution in existence
 
 ### Pré-requisitos
