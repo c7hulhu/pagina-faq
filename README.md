@@ -47,5 +47,5 @@ $ yarn
 # Execute a aplicação em modo de desenvolvimento
 $ yarn dev
 
-# O servidor inciará na porta:3001 - acesse <http://localhost:3001>
+# O servidor inciará na porta:3000 - acesse <http://localhost:3000>
 ```
