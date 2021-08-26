@@ -10,6 +10,8 @@ class CreateFaqService {
   async execute({ title, description }: IFaqRequest) {
     const faqRepository = getCustomRepository(FaqsRepositories);
 
+    console.log(title);
+
     if (!title) {
       throw new Error("Title Incorrect!");
     }

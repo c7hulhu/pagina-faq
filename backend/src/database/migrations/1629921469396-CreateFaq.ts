@@ -8,8 +8,10 @@ export class CreateFaq1629727992900 implements MigrationInterface {
         columns: [
           {
             name: "id",
-            type: "int",
+            type: "integer",
             isPrimary: true,
+            isGenerated: true,
+            generationStrategy: "increment",
           },
           {
             name: "title",
@@ -35,6 +37,6 @@ export class CreateFaq1629727992900 implements MigrationInterface {
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    await queryRunner.dropTable("faq");
+    await queryRunner.dropTable("faqs");
   }
 }
