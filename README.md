@@ -5,7 +5,9 @@
 ## Página de F.A.Q teste e estudo.
 
 - ⚡ **Next.js** — The React Framework
-- 💡 **Twind** — The smallest, fastest, most feature complete Tailwind-in-JS solution in existence
+- 💡 **Tailwind** — The smallest, fastest, most feature complete Tailwind solution in existence
+- ☂ **Express** — Framework web rápido, flexível e minimalista para Node.js
+- ⚓ **Typescript** — TypeScript is JavaScript with syntax for types. TypeScript is a strongly typed programming language which builds on JavaScript giving you better tooling at any scale.
 
 ### Pré-requisitos
 
